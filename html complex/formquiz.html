@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Quiz</title>
+</head>
+<body>
+
+<h1>Register</h1>
+
+<form>
+	<label for="first name">First Name:</label>
+	<input id="first name" type="text" name="firstName" placeholder="John" required>
+
+	<label for="last name">Last Name:</label>
+	<input id="last name" type="text" name="lastName" placeholder="Smith" required>
+
+	<div>
+		<label for="gender">Male</label>
+		<input id="gender" type="radio" name="gender" value="male">
+		<label for="gender">Female</label>
+		<input id="gender" type="radio" name="gender" value="female">
+		<label for="gender">Other</label>
+		<input id="gender" type="radio" name="gender" value="other">
+	</div>
+	
+	<div>
+		<label for="username">Email:</label>
+		<input id="username" type="Email" name="email" placeholder="Your Email" required>
+
+		<label for="password">Password:</label>
+		<input id="password" type="password" name="password" pattern=".{5,10}" required title ="Password must be between 5-10 characters" placeholder="Your Password" required>
+	</div>
+
+	<div>
+		<label for="dob">Birthday:</label>
+		<select name="dob">
+			<option>Month</option>
+			<option>Jan</option>
+			<option>Feb</option>
+			<option>Mar</option> 
+		</select>
+
+		<select name="dob">
+			<option>Day</option>
+			<option>1</option>
+			<option>2</option>
+			<option>17</option> 
+		</select>
+
+
+		<select name="dob">
+			<option>Year</option>
+			<option>2000</option>
+			<option>2001</option>
+			<option>2002</option> 
+		</select>
+
+
+	</div >
+
+
+
+	<p>
+	I agree to the terms and conditions
+	<input type="checkbox" name="tc">
+
+	<p>
+		<input type="submit">
+	</p>
+
+</form>
+
+
+</body>
+</html>
