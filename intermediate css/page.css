@@ -1,0 +1,62 @@
+body {
+	border: 20px solid #A70E51;
+	width: 50%;
+	margin: 0 auto auto auto;
+	margin-top: 1%;
+	padding: 1.75%;
+}
+
+p[id="heading"] {
+
+	margin-top: 0px;
+	font-family: Montserrat;
+	color: #1AA4C8;
+	font-size: 19px;
+	letter-spacing: 1.5px;
+	font-weight: 560;
+
+}
+
+
+h2 {
+	font-family: Jost;
+	font-size: 30px;
+}
+
+
+h2:nth-of-type(1) + p {
+	border-left: 5px solid #A70E51;
+	padding-left: 5px;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 200;
+}
+
+p:nth-of-type(3){
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 200;
+}
+
+h2:nth-of-type(2) + p{
+	margin-top: 0px;
+	font-family: Montserrat;
+	color: #1AA4C8;
+	font-size: 19px;
+	letter-spacing: 1.5px;
+	font-weight: 560;
+}
+
+p:nth-of-type(5){
+	border-left: 5px solid #A70E51;
+	padding-left: 5px;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 200;
+}
+
+.text {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 200;
+}
+
+hr {
+	border: 1.5px solid #f1f1f1;
+}
