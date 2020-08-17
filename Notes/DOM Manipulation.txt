@@ -1,0 +1,48 @@
+*************************STYLE TAG MANIPULATION**********************
+
+First you have to select an element using the document.[selector] and then assign it to a variable. After that we can use the style tag to manipulate that variable
+
+var tag = document.querySelector("highlight")
+
+
+tag.style.color = "blue";
+tag.style.border
+tag.style.fontSize
+tag.style.background
+tag.style.marginTop   etc.
+
+*We can make a class using css and add some properties and then by using JS we can add our elements into the class list so it will automatically inherit the properties that we have added in our CSS class. We do this by the method of varname.classList.add("classname")
+
+For eg:  var tag = document/querySelector("h1");
+
+
+tag.classList.add("another-class")
+tag.classList.remove("another-class")
+tag.classList.toggle("another-class")
+
+There are more methods for manipulation using classlist. 
+Another method to manipulate data is "textContent". This method returns a string of text that our variable holds.
+
+For eg: var tag = document.querySelector("p")
+tag.textContet ----- This will help us retrieve the textContent that our variable holds.
+
+tag.textContent = "blah blah blah" ---- Using this we can even alter the text content of our variable.But this won't return any <strong> tags. Just returns the normal text.
+
+There is another method called innerHTML. This would simply return us the HTML script as it is including the tags. For eg: it would give us: this is a <strong> message </strong>
+
+
+
+*We can also play with Attributes. By using the getAttribute() and setAttribute() methods we can read and write attributes such as src and href. 
+
+for eg: var link = document.querySelector("a");
+
+link.getAttribute("href");
+link.setAttribute("href", "www.dogs.com");
+
+similarly to change the src of an image:
+
+var img = document.querySelector("img");
+img.setAttribute("src", "corgi.png");
+
+
+Attributes are: stuff = , such as href, class, id etc. anything that has the = sign after it is considerd as an attribute.

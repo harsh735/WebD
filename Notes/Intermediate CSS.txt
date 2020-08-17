@@ -1,0 +1,65 @@
+Important font website: cssfontstack.com
+
+
+*************FONTS********************
+
+1)We change the font by using the font-family: property.
+If the font begins with a number we use " " to enter our font in.
+
+
+2)We change the size of the font by using the font-size: property.
+We can use pixels(px) , em(relative font size)
+
+
+3)em is basically used to dynamically change our font size. It is relative to the parent element under which our text is in. 
+
+for eg:
+
+<p>
+abcd hello <span>what</span> a beautiful day!
+</p>
+
+and then in our css file we go:
+
+span {
+	font-size: 2.0em;
+}
+
+so it will make the word "what" twice the size of the other words that are under the paragraph or <p> tag.
+
+
+
+4)Font weight:
+Refers to how thick the lines are of the font. for eg bold, regular,italics etc.
+It varies from 100-800.
+
+
+5) Important properties:
+line height, text align , text decoration.
+
+
+
+
+
+
+
+*****************BOX MODEL************************
+
+
+Consists of 4 important properties:
+
+Content, Padding, Border and Margin. We can play around with these properties in order to give our content a more finished look.
+
+In chrome:
+Blue = content
+Green = padding
+Orange = margin
+
+We can use the property margin: top right bottom left;
+
+to give 4 separate margins to our content in just one line.
+
+To center an element, we can use the 
+
+margin: 0 auto  0 auto 0 auto 0 auto; 
+to centrally align our text.

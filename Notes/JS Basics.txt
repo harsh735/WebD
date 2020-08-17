@@ -1,0 +1,101 @@
+There are 5 primitive data types in JavaScript 
+Numbers,Strings,Booleans, null and undefined 
+booleans are basically "true" or "false" values. 
+
+Null and undefined are actually values as there are only 1 of each. 
+
+
+
+*********JS VARIABLES***************
+
+we initalize the JS variables by following the synatax:
+
+var yourVariableName = yourValue; 
+
+Hence , we have to use the "var" tag everytime we declare a variable.
+One important thing of JS variables is that we can change their name as well as their value.  
+
+JS has "dynamic" typing , which means that the value or the type of the variable can be changed dynamically.
+
+
+*******NULL AND UNDEFINED*************
+
+Both basically mean nothingness in a sense but have a different meaning.
+
+for eg: var age; - this is undefined because we never store anything in this  
+
+Null is explicitly nothing. In order to finish something , we can assign the null value to a variable.
+
+
+*Comment in JS - // 
+
+
+
+**************JS METHODS**************
+
+There are three basic built in methods in JS , they are: 
+
+1) alert 
+2) prompt 
+3) console.log
+
+
+
+
+
+******************FUNCTIONS IN JS************************
+
+1)The return keyword terminates the execution of a function. It is different to console.log as it captures the value of the variable , unlike console.log .It short-circuits the code. There can only be 1 return keyword in a function.
+
+2)In JS , the '===' sign is actually more important than '==' as === equates the input to its data type whereas == just matches the value of the input regardless of the input data type.
+
+
+----------------------IMPORTANT CONCEPT-----------------------
+
+
+3)If we have a variable which is globally declared and inside any function we change its value, for eg: 
+
+var x = 100; 
+function doSomething() {
+  x = 99;
+  console.log(x);
+}
+
+
+OUTPUT:  doSomething()  ---> 99
+	     x          ---> 100
+
+Here , inside the function the value of the variable changes and the changes made are saved to the same variable and thus our function does NOT make it's own variables(as it is generally the case)
+
+
+BUT , if we were to declare x again inside our function then the value of x will be changed to all instances of x where it is declared.
+
+FOR EG:
+
+var x = 100; 
+function doSomething() {
+  var x = 99;
+  console.log(x);
+}
+
+
+OUTPUT:   doSomething()    ----> 99
+		x          ----> 99
+
+Here as we use the var keyword our function makes a new instance of x and the value assigned to it gets saved to the globally declared x. Thus upon calling the function and simply calling x we get the same result 
+
+
+
+---------------------------END-------------------------------------
+
+
+
+*****************SET INTERVAL FUNCTION**********************
+
+This is an example of a higher order function. Using this we can pass a function to other functions. Set interval takes up two arguments, another function and the interval time in miliseconds
+
+setInterval(anotherFunc, interval);
+
+
+
+*If we declare a function inside the setInterval function or any other higher order function in which we have to pass the value of another function , then the one which we are declaring is known as "anonymous function". It only exists in the scope of the setInterval function and has no existence or value outside the scope of setInterval function.

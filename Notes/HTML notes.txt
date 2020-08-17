@@ -1,0 +1,206 @@
+2 types of elements: block line and inline . Block line get their own line whereas inline elements continue in 1 line only.
+
+<strong> - for bold text
+<em> - emphasis, for italics text 
+
+**********LISTS***************
+
+Theres 2 types of lists ordered and unordered. 
+
+<ol> - for ordered list , gives the content in numbers]
+<ul> - for unordered list, uses bullet points for content
+
+
+After writing the <ol> or <ul> tag you must add some list items or <li> tag to it.Both of them require list items. 
+
+
+eg:  <ol>
+   	<li>
+  		content
+	</li>
+     </ol>
+
+
+
+
+*******************CONTAINERS*****************************
+
+<div> is a block level container, it helps in grouping a bunch of text together in a form of container.So basically it takes up its own line, similar to <p> tag.
+
+
+<span> is also a container , but unlike <div> it is an inline container. 
+
+
+
+
+********************ATTIRIBUTES***************************
+
+Attributes are a way through which we add additional information to our html document. 
+
+they are of the format:  some word = something in text.
+
+many attributes only work on 2-5 different elements , some of them only work on 1. 
+
+
+Attributes important for now: src and href.
+
+
+1)To add an image: <img src= "image_name.png">
+it is a self closing tag.
+
+
+2)To add links to your file , use the anchor tag or the
+  <a> tag.
+
+Syntax:   <a href="url">Link Text</a>
+
+
+
+
+*************HTML TABLES************************
+
+To add a table in your html document, you use the
+
+<table> tag , followed by <tr> tag and then <td> tag
+
+
+
+
+syntax :    <table>
+		<tr>
+			<td> Text </td>
+		</tr>
+	    </table
+
+
+2)To add a heading to your table , use the <th> tag. 
+
+eg:   <table border="1">
+	<tr>
+		<th>Name</th>
+	</tr>
+      </table>
+
+
+
+In order to minimize complexity , we can add 2 tags,
+
+<thead> and <tbody> . the <thead> to put all the headings inside of it and the actual content of the table inside the <tbody> tag
+
+
+
+ 
+
+***********************FORMS IN HTML********************************
+
+Important tags: <form> tag
+		<label> tag
+		<input> tag
+
+
+
+
+1)<form> tag 
+
+takes 2 attributes , action and method
+
+action -  uses the url to send form data to (where to send the data)
+method -  it is the type of HTTP request. (eg: get,post etc)
+
+until our backend is covered , we can't do anything with our forms.
+
+
+
+syntax for using <form> tag:
+
+<form action="/my-form-submission-page" method = "post">
+</form>
+
+
+
+
+2) <input> tag is what goes inside our forms.
+
+syntax: 
+
+<input type="text">
+<input type="date">
+<input type="color">
+<input type="file">
+<input type="checkbox"> 
+
+here type is an attribute.
+
+
+
+
+in the input tab , you can add a placeholder which basically tells the user what to put inside the form.
+
+
+Form is just a container where we enter our inputs. 
+It is a block level element.
+
+
+
+
+*********************LABELS******************
+
+They let us add captions to individual elements in our forms.
+They are really important for making our site visible
+
+
+syntax:  
+
+<form action="http://xyz.com" method="post">
+	<label for="username">Username:</label>
+	<input id="username" type="text">
+	<label for="password">Password:</label>
+	<input id="password" type="password">
+	<input type="submit"> or <button>Submit</button>
+
+We can use attributes such as "for" and "id" in our label tag
+
+
+
+
+***********FORM VALIDATIONS************************
+
+We can put simple validations such as the 
+required attribute to make sure that an input is not empty.
+
+There are also type validators. For eg we can put "email" validator 
+instead of text validator.
+
+
+
+
+
+
+***********DROPDOWNS AND RADIO BUTTONS**********************
+
+
+<select> tag is used to create nice dropdown menus.
+we need to use the <option> tag in order to get choices for our dropdown menu.
+
+syntax: 
+
+<select name="abc">
+	<option>Red</option>
+	<option>Yellow</option>
+</select>
+
+
+
+
+we can use the <textarea> tag in order to get a large text space for adding bios and stuff and we can specify the size for the same by using the rows and cols attributes.
+
+
+
+*refer to formquiz.html file for all doubts*
+
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+********************FLEXBOX*****************************
+
+Basically our whole text occupies the contents of our flexbox from top to bottom like it fits inside of it. If we want to move our content (button in our case) from left to right then there are two axes through which we can modify our content:
+
+1)Main direction: left to right
+2)Cross direction: top to bottom
+
+
+In order to adjust our content that is fit inside our flexbox , we use a very important property called "justify content" 
+
+
+For eg: In order to move our content all the way from left to right we use the property:
+
+justify-content-end : moves everything to right
+justify-content-center : moves everything to center
+justify-content-between: allows more content to be inserted
+justify-content-around: evenly spaces out b/w and around the content
+
+
+
+
+
+*****************ALIGN ITEMS*************************
+The above property only focuses on the main axis, i.e left to right. If we want to adjust our content in the cross directional axis , i.e top to bottom then we use the "align-items-" property
+
+
+align-items-end: moves all the items to bottom vertically
+align-items-center: moves all the items to the center vertically
+
+The properties are the same as "justify-content-" property.
+
+We can use both of these properties in order to adjust our text vertically as well as horizontally.
+
+
+
+
+Once we switch from rows to columns , then justify content works on top to bottom (cross directional axis) and align items works on main axis  (left to right). So we can say that once we swap the rows and the columns , everything swaps too.  
+
+
+
+
+*************NAVS************************8
+
+By default , navs are flexboxes. These flexboxes are basically aligned as rows by default. Like the content inside of them is assigned by keeping in mind that the flexbox is a row, hence the flexbox acts as a row by default.
+
+
+
+******************NAVBARS***********************
+
+If we want to expand our navbar after a certain page size we use the class="navbar-expand-md". This will mean that our navbar is initially collapsed but when our page size turns to medium , our navbar will expand.
+
+
+*If we want our navbar items to collapse or come up we use the class:
+
+<button class="navbar-toggler" data-toggle="collapse" data-target="targetName"> </button>
+
+
+Here: 
+1)"data-toggle" tells us what to do with our data and for that we must require a "data-target" field. For instance here , the data-toggle attribute tells our data to collapse and by filling in the data-target field we know which data of ours is going to collapse.
+
+Basically the role of this button is to brovide a "HAMBURGER MENU" for our contents which are present on the navbar. This is useful when viewing in phones. Hence this HAMBURGER MENU is useful when the page size is md , sm or xs.
+
+
+Colt mentions the use of a thing called span for our button, that basically contains our icon. A span is basically a div, but the difference is that a div is a block line element whereas <span> is only an inline element.
+
+
+
+
+*************WHY CLASSES ARE IMPORTANT*****************
+
+Classes such as "navbar-nav" for <ul> tag and "nav-item" for <li> tag are important because then our content gets curated in accordance to our navbar.If we use the the tag navbar-nav for our <ul> tag then it will treat the items that are under it as a navbar. Hence the items will appear to us in a much better manner , similar to the contents of our navbar. If we don't then our items get stacked upon each other and there is no formatting and it looks very ugly. 
+
+Hence <ul class="navbar-nav">
+	<li class="nav-item">ABC</li>
+      </ul>  
+
+is very very important and absolutely necessary.
+
+
+
+
+If we only put <ul class="navbar-nav"> then our items will appear as if they're in a navbar but they will be stacked on top of each other. Hence for the proper formatting to be done , we also require the class <li class="nav-item"> so that our items appear side by side and not on top of each other.
+
+
+
+
+*To horizontally adjust the content , use: justify-content-center.
+*To vertically adjust the content , use: align-items-center.
+
+
+Justify content works horizontally , from left to right whereas align items works from top to bottom , i.e vertically. Both of them can be swapped by using the row-inverse property though.
+
+
+We can use the order attribute to order our content according to our own preferences.
+
+
+For more , explore bootstrap4!

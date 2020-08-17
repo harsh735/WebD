@@ -1,0 +1,22 @@
+************************JS OBJECTS************************
+
+It is similar to classes or structures in c++. 
+For eg: 
+
+var person = {
+	name: "harsh",
+	age: 20,
+	city: "gurgaon"
+};
+
+Here we can access the name age and city of the person easily. It is a list so we must put a "," at the end of our array item.Unlike arrays, objects have no order.
+
+
+The data can be retrieved using bracket or "." operator
+
+for eg:	console.log(variableName.property);
+	console.log(person.name);
+
+
+
+We can add functions inside of an object. That is then referred to as a METHOD.For eg: console.log()

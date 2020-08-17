@@ -1,0 +1,45 @@
+*************NAVBARS**********************
+
+Created using a <nav> tag. We give classes to the different types of navbars present and accordingly adjust/style our webpage. 
+
+for eg: <nav class="navbar navbar-default">
+		<div class="navbar-header">
+		</div
+	</nav>
+
+
+
+
+1)It is preferred to put the contents in a container (<div class="container">) so that it takes up spacing and our content looks neat. Don't put the navbar inside a container because then our navbar will be limited to the space of the container itself. 
+
+Tip: Try to put your text/content inside a container after declaring a navbar.
+
+
+2)Hamburger button: 
+The thing thats the most important is the "data-target" attribute. Whatever this is set to , we have to change our corresponding ID and then our content will collapse and open up. 
+
+If we change the data-target attribute , we must change the ID as well but we should not add the "#" because it is self defined. 
+
+
+
+
+
+
+**************THE GRID SYSTEM*********************
+
+1)The grid is always placed inside a container. 
+We can only make changes upto 12 columns. Meaning that on our webpage there are only 12 columns which we can use. 
+
+Syntax: 
+	<div class="row">
+		<div class="col-lg-4">TEXT HERE</div>
+	</div>
+
+
+There are a lot of sizes with which we can work with, they are:
+
+xl - extra large (newer bootstrap syntax- "col-xl-")
+lg - large
+sm - small
+md - medium
+xs - extra small (newer bootstrap syntax- "col-")

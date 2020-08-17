@@ -1,0 +1,68 @@
+*******************JS ARRAY METHODS*********************
+
+There are 4 main built in methods that make our life easier. 
+
+1)push/pop 
+2)shift/unshift
+3)indexOf
+4)slice
+
+
+1)We use push to add to the END of an array.Similarly we use pop to remove the LAST ITEM in an array.
+
+2)We use unshift to add to the FRONT of an array. Similarly we use shift to remove the FIRST ITEM from an array.
+
+3)We use indexOf() to find the index of an item in an array.Basically it tells of the position of the item that is present in our array.
+
+4)We use slice to copy parts of an array. For eg: 
+
+var fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];
+//we can use slice to copy 2nd and 3rd fruits
+
+var citrus = fruits.slice(1,3); //here we just mention the index
+We can also use this to copy an entire array by entering all the indices.
+
+									
+5) **There's one more method we can use called "Splice". We use this to remove an item from our array by specifying its index number. 
+
+
+
+**JS has an inbuilt function for iterating over an array. It is called the "forEach" function. This function takes another FUNCTION as an argument.
+
+for eg: arr.forEach(someFunction);
+	
+	var colors = ["red", "yellow"];
+	colors.forEach(function(doggo) { 
+		//doggo is a placeholder , we can call it whatever!
+  		console.log(color);
+ 	}
+
+
+The array that you're specifying , forEach takes it up as an argument and thus jo array mei values hain wo pass hoti hain.
+
+
+
+
+
+******************FOR EACH FUNCTION***********************
+
+
+Using the forEach() function we can pass another function as an argument. We can even use js objects to make our own forEach function.
+
+For eg:
+
+Array.prototype.myForEach = function(func) {
+    for(var i = 0; i<this.length; i++) {
+        func(this[i]);    
+    }
+}
+
+
+var friends = ["charlie", "dave", "maddy", "kaitlyn"];
+
+friends.myForEach(alert)
+
+
+As our object function takes "func" as an argument, it means we can pass in any type of function as an argument. So here it'll show us the names stored in our arrays as alerts because alert has been passed as the argument to our object function.
+	
+
