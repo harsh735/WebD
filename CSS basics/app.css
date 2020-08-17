@@ -1,0 +1,28 @@
+h1 {
+	color: rgb(68,0,69);
+	border-color: purple;
+	border-width: 5px;
+	border-style: solid;
+
+	border: 5px solid green;
+}
+
+li {
+
+	color: green;
+}
+
+h4 {
+
+	background: rgb(255,100,80);
+}
+
+
+body {
+
+	/*background: url(https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+
+	background: pink;
+}
